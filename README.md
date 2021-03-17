@@ -30,8 +30,8 @@ output represents files(reads) with .fasta extension located in output folder.
 
 ### command line examples ###
 
-python3 Fastq_to_fasta.py #This will generate#
+python3 Fastq_to_fasta.py /path/to/input_dir /path/to/out_dir #This will generate bash file#
 
-bash convert_to_fasta_files.sh	//to run bbduk_search
+./convert_to_fasta_files.sh //this will run generated bash file
 
 #written by V.Shevtsov xatabadich(at)gmail.com
