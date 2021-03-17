@@ -1,12 +1,10 @@
 import csv
 import os
-
-# determine tool directories
-#seqtktof = '/path_to/seqtk' #change to path to seqtk
+import sys
 
 # determine files directories
-data_in_dir = = sys.argv[1]
-data_out_dir = = sys.argv[2]
+data_in_dir =  sys.argv[1]
+data_out_dir =  sys.argv[2]
 
 fastq_gz_row_list = sorted([os.path.join(data_in_dir, i) for i in os.listdir(data_in_dir) if i.endswith('.fastq')])
 #generate the output nae suffix
