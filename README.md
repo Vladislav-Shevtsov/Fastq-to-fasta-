@@ -34,4 +34,4 @@ output represents files(reads) with .fasta extension located in output folder.
 
  ```./convert_to_fasta_files.sh``` #This will run generated bash file 
 
-#written by V.Shevtsov xatabadich(at)gmail.com
+#written by Shevtsov V. xatabadich(at)gmail.com
