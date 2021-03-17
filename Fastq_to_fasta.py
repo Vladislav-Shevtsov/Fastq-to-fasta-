@@ -2,11 +2,11 @@ import csv
 import os
 
 # determine tool directories
-seqtktof = '/path_to/seqtk' #change to path to seqtk
+#seqtktof = '/path_to/seqtk' #change to path to seqtk
 
 # determine files directories
-data_in_dir = '/path_to/input_dir' #change to input directory
-data_out_dir = '/path_to/ou_dir' #change to output directory 
+data_in_dir = = sys.argv[1]
+data_out_dir = = sys.argv[2]
 
 fastq_gz_row_list = sorted([os.path.join(data_in_dir, i) for i in os.listdir(data_in_dir) if i.endswith('.fastq')])
 #generate the output nae suffix
@@ -26,7 +26,7 @@ with open(bash_file, 'w') as f:
     
 
     if not os.path.isfile(out_sample):
-            f.write(f'{seqtktof} seq -a {sample} > {data_out_dir}/{out_sample} \n')
+            f.write(f'seqtk seq -a {sample} > {data_out_dir}/{out_sample} \n')
 			
 			
 			#NOTE: 	GENERATED convert_to_fasta.sh FILE MUST BE EXECUTED OUTSIDE OF INPUT DIRECTORY!
